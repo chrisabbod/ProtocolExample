@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ProtocolExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJO-9O-jLh">
+                                <rect key="frame" x="159" y="68" width="57" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GCc-Tq-AQZ">
+                                <rect key="frame" x="76" y="112" width="223" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQR-hB-3TC">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Eat">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dogEatButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F1O-P3-rhS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQW-IU-4PS">
+                                        <rect key="frame" x="58" y="0.0" width="49.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Sleep">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dogSleepButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gtG-Vo-p8W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0b-YH-kPE">
+                                        <rect key="frame" x="115.5" y="0.0" width="50" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Bark">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dogBarkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Pp-EI-Dvq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8I0-HU-WOU">
+                                        <rect key="frame" x="173.5" y="0.0" width="49.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Fetch">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dogFetchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTQ-LC-Tp0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFX-kf-zWf">
+                                <rect key="frame" x="87" y="156" width="201" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Cat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGy-CN-dSf">
+                                <rect key="frame" x="163" y="275" width="49" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fCw-8d-HrU">
+                                <rect key="frame" x="87" y="362" width="201" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bird" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us9-o8-Ula">
+                                <rect key="frame" x="159" y="458" width="57" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="00w-4P-6y2">
+                                <rect key="frame" x="97" y="502" width="181" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnR-zB-bil">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Eat">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="birdEatButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UwP-Cd-03c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwU-I6-vRa">
+                                        <rect key="frame" x="38" y="0.0" width="49.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Sleep">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="birdSleepButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYZ-Ix-lyK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8m1-0O-hxD">
+                                        <rect key="frame" x="95.5" y="0.0" width="48" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Chirp">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="birdChirpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UzO-7U-tKE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbm-72-7kb">
+                                        <rect key="frame" x="151.5" y="0.0" width="29.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Fly">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="birdFlyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfg-jN-vZ0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qtm-fT-NKt" userLabel="Bird Text Field">
+                                <rect key="frame" x="87" y="546" width="201" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mxk-61-oT5">
+                                <rect key="frame" x="90" y="318" width="195" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rM-Jo-NPp">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Eat">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="catEatButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6YG-GU-KrA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fk-VK-w4j">
+                                        <rect key="frame" x="38" y="0.0" width="50.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Sleep">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="catSleepButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Toh-n8-pIS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asI-tB-0W6">
+                                        <rect key="frame" x="96.5" y="0.0" width="54" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Meow">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="catMeowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cl-eY-fw9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u60-hv-ESq">
+                                        <rect key="frame" x="158.5" y="0.0" width="36.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Purr">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="catPurrButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oza-HX-Ghh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NJO-9O-jLh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="0uS-zq-1je"/>
+                            <constraint firstItem="UGy-CN-dSf" firstAttribute="centerX" secondItem="fCw-8d-HrU" secondAttribute="centerX" id="1LP-Ph-amR"/>
+                            <constraint firstItem="NJO-9O-jLh" firstAttribute="leading" secondItem="us9-o8-Ula" secondAttribute="leading" id="2qE-RZ-Bmp"/>
+                            <constraint firstItem="NJO-9O-jLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="3DO-RV-jNO"/>
+                            <constraint firstItem="KFX-kf-zWf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="4aJ-97-KNy"/>
+                            <constraint firstItem="00w-4P-6y2" firstAttribute="centerX" secondItem="Qtm-fT-NKt" secondAttribute="centerX" id="5kr-mn-pzh"/>
+                            <constraint firstItem="mxk-61-oT5" firstAttribute="centerX" secondItem="fCw-8d-HrU" secondAttribute="centerX" id="5r3-kK-q1V"/>
+                            <constraint firstItem="KFX-kf-zWf" firstAttribute="leading" secondItem="fCw-8d-HrU" secondAttribute="leading" id="8aL-MG-RGV"/>
+                            <constraint firstItem="UGy-CN-dSf" firstAttribute="top" secondItem="KFX-kf-zWf" secondAttribute="bottom" constant="89" id="FgD-SI-hbH"/>
+                            <constraint firstItem="mxk-61-oT5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="H3y-Yg-2LU"/>
+                            <constraint firstItem="mxk-61-oT5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lf8-0d-WTh"/>
+                            <constraint firstItem="Qtm-fT-NKt" firstAttribute="top" secondItem="00w-4P-6y2" secondAttribute="bottom" constant="8" symbolic="YES" id="Q3f-Rx-Swa"/>
+                            <constraint firstItem="fCw-8d-HrU" firstAttribute="leading" secondItem="Qtm-fT-NKt" secondAttribute="leading" id="Vai-G5-q8m"/>
+                            <constraint firstItem="NJO-9O-jLh" firstAttribute="centerX" secondItem="GCc-Tq-AQZ" secondAttribute="centerX" id="WSo-TL-vMV"/>
+                            <constraint firstItem="KFX-kf-zWf" firstAttribute="trailing" secondItem="fCw-8d-HrU" secondAttribute="trailing" id="WYT-10-cZ2"/>
+                            <constraint firstItem="00w-4P-6y2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="ZQe-fP-LVA"/>
+                            <constraint firstItem="GCc-Tq-AQZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="f9J-Nn-2EX"/>
+                            <constraint firstItem="00w-4P-6y2" firstAttribute="top" secondItem="us9-o8-Ula" secondAttribute="bottom" constant="8" symbolic="YES" id="gtb-xr-D7Y"/>
+                            <constraint firstItem="mxk-61-oT5" firstAttribute="top" secondItem="UGy-CN-dSf" secondAttribute="bottom" constant="7" id="kAB-VK-Xr5"/>
+                            <constraint firstItem="GCc-Tq-AQZ" firstAttribute="centerX" secondItem="KFX-kf-zWf" secondAttribute="centerX" id="l54-db-Bmf"/>
+                            <constraint firstItem="GCc-Tq-AQZ" firstAttribute="top" secondItem="NJO-9O-jLh" secondAttribute="bottom" constant="8" symbolic="YES" id="mdw-te-0uv"/>
+                            <constraint firstItem="KFX-kf-zWf" firstAttribute="top" secondItem="GCc-Tq-AQZ" secondAttribute="bottom" constant="8" symbolic="YES" id="ozC-oW-DoN"/>
+                            <constraint firstItem="us9-o8-Ula" firstAttribute="top" secondItem="fCw-8d-HrU" secondAttribute="bottom" constant="66" id="rNQ-L1-9dh"/>
+                            <constraint firstItem="UGy-CN-dSf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="163" id="rWd-vP-J37"/>
+                            <constraint firstItem="fCw-8d-HrU" firstAttribute="top" secondItem="mxk-61-oT5" secondAttribute="bottom" constant="8" symbolic="YES" id="vkb-P5-ElB"/>
+                            <constraint firstItem="NJO-9O-jLh" firstAttribute="trailing" secondItem="us9-o8-Ula" secondAttribute="trailing" id="wFh-EU-iX8"/>
+                            <constraint firstItem="fCw-8d-HrU" firstAttribute="trailing" secondItem="Qtm-fT-NKt" secondAttribute="trailing" id="yzE-sC-eXO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="birdTextField" destination="Qtm-fT-NKt" id="eqj-wI-zBy"/>
+                        <outlet property="catTextField" destination="fCw-8d-HrU" id="gl2-Mm-WOW"/>
+                        <outlet property="dogTextField" destination="KFX-kf-zWf" id="jid-wf-dxa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
